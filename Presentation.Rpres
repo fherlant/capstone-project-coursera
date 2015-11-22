@@ -1,0 +1,47 @@
+Predicting Frequently Reviewed Businesses
+========================================================
+date: November 21, 2015
+Data Science Specialization - Capstone Project</br>
+Yelp Dataset Challenge
+
+
+Challenge
+========================================================
+For the Capstone Project within their Data Science Specialization, Coursera offered students to participate in the Yelp Dataset Challenge (Round 6). The dataset consists of
+
+- 1.6M reviews and 500K tips by 366K users for 61K businesses
+- 481K business attributes, e.g., hours, parking availability, ambience.
+- Social network of 366K users for a total of 2.9M social edges.
+- Aggregated check-ins over time for each of the 61K businesses
+
+**Our question:** Can we predict if a business is likely to receive more than 100 reviews?
+
+
+Prediction Modeling
+========================================================
++ Decision Trees
+    - Recursive partitioning and regression trees
+    - Rpart package
++ Linear models
+    - Logistic Regression
+    - GLM package
++ Many predictors
+    - Review count
+    - Stars
+    - Business price range
+    - ...
+
+
+Results
+========================================================
+
++ Below is a summary of some of our experiments with logistic regression:
+![alt text](img/Figure2.png)
++ The most useful predictor seems to be the number of reviews generated per day
+
+
+Conclusion
+========================================================
++ Our statistical models were somewhat successful at predicting frequently reviewed businesses
++ Many predictors were explored but further research is required to determine more effective predictor variables
++ In future work, we could investigate sentiment and topic analysis with the hope of making better predictions
